@@ -1,0 +1,95 @@
+#chatSection {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    max-width: 400px;
+    width:100%;
+    max-height: 500px;
+    height: 50px;
+    background-color: #E9EFF1;
+
+    .ChatHead {
+        height: 30px;
+        padding: 10px;
+        background-color: #313B44;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        .circle {
+            float: right;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 27px;
+            .fa {
+                vertical-align: middle;
+                transition: transform .5s;
+            }
+        }
+    }
+
+    .ChatBody {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-height: 450px;
+        height: 100%;
+        .chatBox{
+            padding: 10px   20px;
+            height: 70px;
+            border-bottom: solid 1px #E2EAED;
+            cursor: pointer;
+            .pic-container {
+                position: relative;
+                margin-right: 15px;
+                display: inline-block;
+                vertical-align: middle;
+                .pic-circle{
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    overflow: hidden;
+                    position: relative;
+                }
+                .status-circle{
+                    position: absolute;
+                    height: 12px;
+                    width: 12px;
+                    border-radius: 50%;
+                    bottom:0px;
+                    right:0px;
+                    border: 2px solid #EFF6F7;
+                }
+                img {
+                    height:50px;
+                    width: auto;
+                }
+            }
+            .msg-container {
+                font-family: Arial, Helvetica, sans-serif;
+                display: inline-block;
+                width:70%;
+                vertical-align: middle;
+                .chat-name{
+                    font-size: 15px;
+                    font-weight: bold;
+                    white-space: nowrap; 
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: rgb(103, 113, 124);
+                }
+                .chat-message {
+                    font-size: 12px;
+                    white-space: nowrap; 
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: rgb(160, 169, 177);
+                }
+            }
+        }
+        .endBox {
+            height: 20px;
+        }
+    }
+}
